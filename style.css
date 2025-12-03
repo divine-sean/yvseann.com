@@ -159,6 +159,7 @@ body {
   cursor: pointer;
   color: white;
   margin-bottom: 0.5vh;
+  transition: all 0.2s ease
 }
 
 #buttonOptions div button:hover{
