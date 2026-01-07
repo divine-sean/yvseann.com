@@ -1,5 +1,3 @@
-<!--GAAAAAAAH WHY DOES CSS HAVE TO BE SO HARD. MANAJNFJESNFASENFUIANFUI-->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,98 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>yvseann</title>
-  <link rel="Stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!--Hero Banner-->
-  <div id="topsection">
-    <!--Text n buttons n stuff-->
-    <div class="overlayContent">
-      <h1>Hi, I am yvseann.</h1>
-      <p>I create a variety of projects from 3ds games, to SCP games in roblox, to unreal engine, maybe from scratch in
-        C. I'm interested in OSDevelopment and planning on learning a lot more about it. Welcome to my portfolio page.
-      </p>
-
-      <!--The buttons i was talking about-->
-      <p>BELOW BUTTONS DONT WORK YET</p>
-      <div id="buttonBlock">
-        <a href="javascript:void(0)" id="showProfile">SHOW PROFILE</a>
-        <a href="javascript:void(0)" id="knowMore">KNOW MORE</a>
-      </div>
-    </div>
+  <div class="sidenav">
+    <a href="index.html">
+      <img src="images/sidenav/home.png">
+      <span>Home</span>
+    </a>
   </div>
 
-  <!--Main stuff-->
-  <h2>Testing</h2>
-
-  <br>
-  <h4>I am testing the website. It is nowhere near done. It doesn't even have my portfolio yet. CSS is hard :( Why do
-    people even want good design?? Theres no point in it. Why can't we just go back to when design was just text
-    aligned in a certain way.
-  </h4>
-
-  <div id="buttonOptions">
-    <div id="Modelling">
-      <button onclick="showBlock('modellingBlock')"><img src="images/arrowbutton.png"
-          alt="Arrow Button">Modelling</button>
-      <!--This should probably be quite wide, with a arrow to indicate if you've selected it or not-->
-    </div>
-
-    <div id="Scripting">
-      <button onclick="showBlock('scriptingBlock')"><img src="images/arrowbutton.png"
-          alt="Arrow Button">Scripting</button>
-      <!--This should probably be quite wide, with a arrow to indicate if you've selected it or not-->
-    </div>
-
+  <div class="main">
+    <h1>This is yvseann</h1>
   </div>
-
-  <div class="hiddenBlock" id="modellingBlock" style="display: none;"> <!--I'll make it not inline soon:tm:-->
-    <p>Okay so I'm still working out the structure but I think I'll have tabs which open blocks, and they can open new blocks inside of that to choose what sorta stuff they want to see.</p>
-
-    <p>
-      Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>
-    </p>
-  </div>
-
-  <div class="hiddenBlock" id="scriptingBlock" style="display: none;"> <!--I'll make it not inline soon:tm:-->
-    <p>Okay so I'm still working out the structure but I think I'll have tabs which open blocks, and they can open new blocks inside of that to choose what sorta stuff they want to see.</p>
-
-    <p>
-      Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>Hello<br>
-    </p>
-  </div>
-
-
-  <footer><a href="https://github.com/divine-sean/yvseann.com">Github</a></footer>
-
-  <script>
-
-    function showBlock(element) {
-
-      element = document.getElementById(element);
-
-      if (element.style.display === "none") {
-        element.style.display = "flex";
-      } else {
-        element.style.display = "none";
-      }
-
-    }
-
-
-    window.addEventListener('scroll', () => {
-      const topSection = document.getElementById('topsection');
-      const sectionHeight = topSection.offsetHeight;
-      const scrolled = window.scrollY;
-      // Only animate while the hero is visible
-      if (scrolled <= sectionHeight) {
-        // Map scroll progress (0 → sectionHeight) to background position (0% → 100%)
-        const progress = scrolled / sectionHeight * 100;
-        topSection.style.backgroundPosition = `center ${progress}%`;
-      }
-    });
-  </script>
 </body>
 
 </html>
